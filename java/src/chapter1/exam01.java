@@ -9,4 +9,4 @@ public class exam01 {
 		System.out.println("ธÞที");
 	}
 
-}
+}11
