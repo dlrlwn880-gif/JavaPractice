@@ -1,12 +1,12 @@
-package chapter1;
+package chapter1; // 세미콜론
 
 public class exam01 {
-	/*method*/
+
+	/* ~ */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("hello");
+		System.out.println("안녕하세요");
 
-		System.out.println("메롱");
 	}
 
 }

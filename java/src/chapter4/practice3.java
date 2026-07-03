@@ -4,70 +4,164 @@ public class practice3 {
 
 	public static void main(String[] args) {
 		
-		/*
-		 *     *
-		 *     **
-		 *     ***
-		 *     ****
-		 *     *****
-		 */
+//		*
+//		**
+//		***
+//		****
+//		*****
 		for(int i = 1; i <= 5; i++) {
-			for(int j = 1; j <= i; j++) {
+			for(int j = 1; j <= i; j++ ) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
 		
-	
-		/* *****
-		 * ****
-		 * ***
-		 * **
-		 * *
-		 */
+		System.out.print("\n\n");
 		
-		for(int a = 1; a <= 5; a++) {
-			for(int b = 5; b >= a; b--) {
+//		*****
+//		****
+//		***
+//		**
+//		*
+		for(int i = 5; i > 0; i--) {
+			for(int j = 1; j <= i; j++ ) {
 				System.out.print("*");
 			}
-		     System.out.println();
+			System.out.println();
 		}
-		/* 
-		 *     *
-		 *    *** 
-		 *   *****
-		 *  *******
-		 * *********
-		 * 
-		 *  d¿¡ Áõ°¨½Ä ´ëÀÔÇÏ·Á¸é d=+2 ÀÌ·±½ÄÀ¸·Î ¼ö½Ä´ëÀÔ. 
-		 * 
-		 */
 		
-		for(int c = 1; c <= 5; c++) {
-			for(int d = 5; d >= c; d--) {
+		System.out.print("\n\n");
+		
+//	    !!!!*
+//	    !!!***
+//	    !!*****
+//	    !*******
+//	    *********
+		for(int i = 0; i < 5; i++) {
+			for(int j = 1; j <= 4 - i; j++) {
 				System.out.print(" ");
-	}		for(int d = 1; d <= c; d++) {
-		System.out.print("*");
-	}
-			for(int d = 1; d <= c - 1; d++) {
-		System.out.print("*");
-	}
-			System.out.println();
-		}
-		/* 
-		 * *********   
-		 *  ******* 
-		 *   *****  
-		 *    ***
-		 *     *				 
-		 */
-		for(int i = 1; i <= 5; i++) {
-			for(int j = 1; j <= i; j++) {
+			}
+			for(int j = 1; j <= 2*i+1; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
 		
+		System.out.print("\n\n");
+		
+//		*********
+//		!*******
+//		!!*****
+//		!!!***
+//		!!!!*
+		
+		for(int i = 0; i < 5; i++) {
+			for(int j = 0; j < i; j++) {
+				System.out.print(" ");
+			}
+			for(int j = 1; j <= 2*(4 - i)+1; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		System.out.print("\n\n");
+// 		 !!*
+//		 !***
+//		 *****
+//		 !***
+//		 !!*
+
+        for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= 3 - i; j++)
+                System.out.print(" ");
+            for (int j = 1; j <= 2 * i - 1; j++)
+                System.out.print("*");
+            System.out.println();
+        }
+        for (int i = 2; i >= 1; i--) {
+            for (int j = 1; j <= 3 - i; j++)
+                System.out.print(" ");
+            for (int j = 1; j <= 2 * i - 1; j++)
+                System.out.print("*");
+            System.out.println();
+        }
+        System.out.print("\n\n");
+
+//      *****
+//      !***
+//      !!*
+//      !***
+//      *****
+        for (int i = 3; i >= 1; i--) {
+            for (int j = 1; j <= 3 - i; j++)
+                System.out.print(" ");
+            for (int j = 1; j <= 2 * i - 1; j++)
+                System.out.print("*");
+            System.out.println();
+        }
+        for (int i = 2; i <= 3; i++) {
+            for (int j = 1; j <= 3 - i; j++)
+                System.out.print(" ");
+            for (int j = 1; j <= 2 * i - 1; j++)
+                System.out.print("*");
+            System.out.println();
+        }
+
+        System.out.print("\n\n");
+        
+//      *!!!!!!*******
+//      **!!!!!******
+//      ***!!!!*****
+//      ****!!!****
+//      *****!!***
+//      ******!**
+//      ********
+//      !!!!!!********
+//      !!!!!**!******
+//      !!!!***!!*****
+//      !!!****!!!****
+//      !!*****!!!!***
+//      !******!!!!!**
+//      *******!!!!!!*
+        // ìœ„ìª½
+        for (int i = 1; i <= 7; i++) {
+
+            // ì™¼ìª½ ë³„
+            for (int j = 1; j <= i; j++)
+                System.out.print("*");
+
+            // ê°€ìš´ë° ê³µë°±
+            for (int j = 1; j <= 7 - i; j++)
+                System.out.print(" ");
+
+            // ì˜¤ë¥¸ìª½ ë³„
+            for (int j = 1; j <= 8 - i; j++)
+                System.out.print("*");
+
+            System.out.println();
+        }
+
+        // ì•„ëž˜ìª½
+        for (int i = 1; i <= 7; i++) {
+
+            // ì™¼ìª½ ê³µë°±
+            for (int j = 1; j <= 7 - i; j++)
+                System.out.print(" ");
+
+            // ì™¼ìª½ ë³„
+            for (int j = 1; j <= i; j++)
+                System.out.print("*");
+
+            // ê°€ìš´ë° ê³µë°±
+            for (int j = 1; j <= i - 1; j++)
+                System.out.print(" ");
+
+            // ì˜¤ë¥¸ìª½ ë³„
+            for (int j = 1; j <= 8 - i; j++)
+                System.out.print("*");
+
+            System.out.println();
+        }
 	}
 
 }
